@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.7;
@@ -17,6 +19,7 @@
             background-color: #0a0a0a;
             padding: 2rem 1rem;
         }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -25,23 +28,27 @@
             padding: 3rem 2.5rem;
             border: 1px solid #1e1e1e;
         }
+
         h1 {
             font-size: 2rem;
             font-weight: 700;
             color: #ffffff;
             margin-bottom: 0.5rem;
         }
+
         .subtitle {
             color: #00bcd4;
             font-size: 0.95rem;
             margin-bottom: 2rem;
             font-weight: 500;
         }
+
         .effective-date {
             font-size: 0.9rem;
             color: #888;
             margin-bottom: 2.5rem;
         }
+
         h2 {
             font-size: 1.3rem;
             font-weight: 600;
@@ -51,28 +58,35 @@
             padding-bottom: 0.4rem;
             border-bottom: 1px solid #222;
         }
+
         p {
             margin-bottom: 1rem;
             color: #bbb;
         }
+
         ul {
             margin-bottom: 1rem;
             padding-left: 1.5rem;
         }
+
         li {
             margin-bottom: 0.5rem;
             color: #bbb;
         }
+
         strong {
             color: #e0e0e0;
         }
+
         a {
             color: #00bcd4;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         .highlight-box {
             background: #1a2332;
             border-left: 4px solid #00bcd4;
@@ -80,10 +94,12 @@
             border-radius: 0 8px 8px 0;
             margin: 1.5rem 0;
         }
+
         .highlight-box p {
             margin-bottom: 0;
             color: #ccc;
         }
+
         .footer {
             margin-top: 3rem;
             padding-top: 1.5rem;
@@ -92,26 +108,30 @@
             color: #666;
             text-align: center;
         }
+
         @media (max-width: 600px) {
             .container {
                 padding: 2rem 1.25rem;
             }
+
             h1 {
                 font-size: 1.5rem;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
         <p class="subtitle">Loud Alarm – Solve2Wake</p>
         <p class="effective-date"><strong>Effective Date:</strong> March 8, 2026</p>
+
         <div class="highlight-box">
-            <p><strong>Summary:</strong> Loud Alarm – Solve2Wake does <strong>not collect, store, transmit, or
-                    share</strong> any personal data. All app data is stored locally on your device and never leaves it.
+            <p><strong>Summary:</strong> Loud Alarm – Solve2Wake does <strong>not collect or share</strong> any personally identifiable information. Your alarm and configuration data is stored locally on your device. We use anonymized analytics to improve the app experience.
             </p>
         </div>
+
         <h2>1. Introduction</h2>
         <p>
             This Privacy Policy explains how <strong>Loud Alarm – Solve2Wake</strong> ("we", "our", or "the App")
@@ -121,6 +141,7 @@
         <p>
             By using the App, you agree to the practices described in this Privacy Policy.
         </p>
+
         <h2>2. Information We Collect</h2>
         <p>
             <strong>We do not collect any personal information.</strong> The App does not require an account, login, or
@@ -130,11 +151,10 @@
             <li>We do <strong>not</strong> collect your name, email address, phone number, or any personally
                 identifiable information.</li>
             <li>We do <strong>not</strong> collect location data.</li>
-            <li>We do <strong>not</strong> collect usage analytics or crash reports.</li>
-            <li>We do <strong>not</strong> use any third-party analytics, advertising, or tracking services.</li>
-            <li>The App does <strong>not</strong> have internet access and cannot transmit any data off your device.
-            </li>
+            <li>We <strong>do</strong> collect anonymized usage analytics (such as screens viewed, challenges completed, and alarm settings used) to help us improve the App.</li>
+            <li>We use <strong>Google Analytics for Firebase</strong> to process this usage data securely.</li>
         </ul>
+
         <h2>3. Data Stored Locally on Your Device</h2>
         <p>
             The App stores the following data <strong>locally on your device only</strong> to provide its core
@@ -156,6 +176,7 @@
             device and is <strong>never transmitted</strong> to any server or third party. If you uninstall the App, all
             locally stored data is automatically deleted.
         </p>
+
         <h2>4. Camera Usage & Barcode Images</h2>
         <p>
             The App requests <strong>camera permission</strong> solely for the <strong>Barcode Challenge</strong>
@@ -178,6 +199,7 @@
             <li>Camera permission is <strong>optional</strong>. The App functions fully without it if you do not use the
                 Barcode Challenge feature.</li>
         </ul>
+
         <h2>5. Permissions Explained</h2>
         <p>The App requests the following Android permissions, all of which are used solely for core alarm
             functionality:</p>
@@ -201,30 +223,36 @@
                 by battery optimization.</li>
             <li><strong>Billing:</strong> Required to process optional in-app purchases or donations securely via Google
                 Play.</li>
+            <li><strong>Internet &amp; Network State:</strong> Required to transmit anonymized analytics data to help improve the App.</li>
         </ul>
+
         <h2>6. Third-Party Services</h2>
         <p>
             The App uses <strong>Google ML Kit Barcode Scanning</strong> for on-device barcode recognition. This library
             processes data <strong>entirely on your device</strong> and does not send any data to Google or any external
-            server. No other third-party services, SDKs, analytics platforms, or advertising networks are integrated
-            into the App.
+            server. 
         </p>
+        <p>
+            The App also uses <strong>Google Analytics for Firebase</strong> to collect anonymized usage data to help us understand how users interact with the App. You can learn more about how Google uses data at <a href="https://policies.google.com/technologies/partner-sites" target="_blank">Google's Privacy &amp; Terms site</a>. No advertising networks are integrated into the App.
+        </p>
+
         <h2>7. Data Sharing</h2>
         <p>
-            We do <strong>not share</strong> any data with third parties. Since the App does not collect any personal
-            data and does not have internet permission, there is no data to share, sell, or transfer.
+            We do <strong>not share</strong> any personally identifiable information with third parties. Anonymized usage data is processed by Google Analytics for Firebase as described above. We do not sell any of your data.
         </p>
+
         <h2>8. Children's Privacy</h2>
         <p>
             The App does not knowingly collect any personal information from anyone, including children under the age of
             13. Since the App collects no personal data whatsoever, it is safe for users of all ages.
         </p>
+
         <h2>9. Data Security</h2>
         <p>
-            All data generated by the App is stored locally on your device using Android's built-in secure storage
-            mechanisms. Since no data is transmitted over the internet, there is no risk of data interception during
-            transmission.
+            All core alarm data generated by the App is stored locally on your device using Android's built-in secure storage
+            mechanisms. Anonymized analytics data is transmitted securely over encrypted connections (HTTPS) to Firebase servers.
         </p>
+
         <h2>10. Data Retention and Deletion</h2>
         <p>
             All App data is stored locally on your device. You can delete all data at any time by:
@@ -233,11 +261,13 @@
             <li>Clearing the App's data through your device's Settings → Apps → Loud Alarm → Storage → Clear Data.</li>
             <li>Uninstalling the App, which automatically removes all associated data.</li>
         </ul>
+
         <h2>11. Changes to This Privacy Policy</h2>
         <p>
             We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an
             updated "Effective Date." We encourage you to review this page periodically for any updates.
         </p>
+
         <h2>12. Contact Us</h2>
         <p>
             If you have any questions or concerns about this Privacy Policy or the App's data practices, please contact
@@ -246,9 +276,11 @@
         <p>
             <strong>Email:</strong> <a href="mailto:rylpix.app@gmail.com">rylpix.app@gmail.com</a>
         </p>
+
         <div class="footer">
             <p>&copy; 2026 Loud Alarm – Solve2Wake. All rights reserved.</p>
         </div>
     </div>
 </body>
+
 </html>
