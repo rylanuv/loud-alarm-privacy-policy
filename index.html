@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy – Loud Alarm - Solve2Wake</title>
+    <title>Privacy Policy – Solve to Wake - Loud Alarm</title>
     <style>
         * {
             margin: 0;
@@ -124,17 +124,17 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="subtitle">Loud Alarm – Solve2Wake</p>
-        <p class="effective-date"><strong>Effective Date:</strong> June 30, 2026</p>
+        <p class="subtitle">Solve to Wake – Loud Alarm</p>
+        <p class="effective-date"><strong>Effective Date:</strong> October 27, 2026</p>
 
         <div class="highlight-box">
-            <p><strong>Summary:</strong> Loud Alarm – Solve2Wake does <strong>not collect or share</strong> any personally identifiable information. Your alarm and configuration data is stored locally on your device. We use anonymized analytics (including a resettable advertising identifier) to improve the app experience.
+            <p><strong>Summary:</strong> Solve to Wake – Loud Alarm stores all alarm and configuration data <strong>locally on your device</strong> by default. If you choose to sign in with Google, your alarm configurations and app settings are synced to Firebase Firestore to enable cloud backup and cross-device sync. We use anonymized analytics (including a resettable advertising identifier) to improve the app experience. We do <strong>not</strong> sell your data or share it with advertising networks.
             </p>
         </div>
 
         <h2>1. Introduction</h2>
         <p>
-            This Privacy Policy explains how <strong>Loud Alarm – Solve2Wake</strong> ("we", "our", or "the App")
+            This Privacy Policy explains how <strong>Solve to Wake – Loud Alarm</strong> ("we", "our", or "the App")
             handles information when you use our Android application. We are committed to protecting your privacy and
             being transparent about our data practices.
         </p>
@@ -144,19 +144,35 @@
 
         <h2>2. Information We Collect</h2>
         <p>
-            <strong>We do not collect any personal information.</strong> The App does not require an account, login, or
-            any personal details to function. Specifically:
+            The App does not require an account or login to function. All core features work without signing in. Specifically:
         </p>
         <ul>
-            <li>We do <strong>not</strong> collect your name, email address, phone number, or any personally
-                identifiable information.</li>
             <li>We do <strong>not</strong> collect location data.</li>
             <li>We <strong>do</strong> collect anonymized usage analytics (such as screens viewed, challenges completed, and alarm settings used) to help us improve the App.</li>
             <li>We use <strong>Google Analytics for Firebase</strong> to process this usage data securely.</li>
             <li>We collect the <strong>Google Advertising ID</strong> (a resettable, anonymous identifier) solely for analytics purposes. This identifier does <strong>not</strong> contain personally identifiable information.</li>
         </ul>
 
-        <h2>3. Data Stored Locally on Your Device</h2>
+        <h2>3. Google Sign-In &amp; Cloud Sync (Optional)</h2>
+        <p>
+            The App offers an <strong>optional</strong> Google Sign-In feature. If you choose to sign in, the following information is collected and stored securely in <strong>Firebase Firestore</strong>:
+        </p>
+        <ul>
+            <li><strong>Account information:</strong> Your Firebase user ID, first name, email address, and account creation timestamp — provided by Google during sign-in.</li>
+            <li><strong>Alarm configurations:</strong> Your alarm settings (time, days, label, challenge types, challenge parameters, and other alarm preferences) are synced to Firestore so you can back up and restore them across devices.</li>
+            <li><strong>App settings:</strong> Your preferences (vibration, snooze, volume, fade-in, dark mode, auto-silence, vibration pattern, notification preferences, and other UI/behavior settings) are synced to Firestore.</li>
+        </ul>
+        <p>
+            This data is used <strong>solely</strong> to provide the cloud backup and sync feature. It is <strong>not</strong> shared with any third parties, advertising networks, or used for any purpose other than restoring your alarms and settings.
+        </p>
+        <p>
+            <strong>Barcode images are never synced to the cloud</strong> — they remain stored only on your device.
+        </p>
+        <p>
+            Google Sign-In is entirely optional. If you do not sign in, no personal information is collected and all data remains on your device.
+        </p>
+
+        <h2>4. Data Stored Locally on Your Device</h2>
         <p>
             The App stores the following data <strong>locally on your device only</strong> to provide its core
             functionality:
@@ -164,30 +180,30 @@
         <ul>
             <li><strong>Alarm configurations:</strong> Time, days of the week, label, volume boost preference, wake-up
                 check settings, and challenge configurations (e.g., math difficulty, challenge types, barcode value,
-                rewrite text, and step count).</li>
+                rewrite text, step count, shake count, tap count, squat count, push-up count, and other challenge parameters).</li>
             <li><strong>Barcode images:</strong> If you use the Barcode Challenge feature, a photo of the barcode or QR
                 code is captured and saved locally on your device. This image is used solely to help you identify and
                 locate the physical barcode you need to scan to dismiss the alarm. These images are <strong>never
                     transmitted</strong> to any server or third party.</li>
-            <li><strong>Sensor data:</strong> If you use the Step Counter or Shake challenges, the App temporarily reads motion sensor data (accelerometer and step counter) during the challenge. This data is processed in real-time on your device and is <strong>never stored or transmitted</strong>.</li>
+            <li><strong>Sensor data:</strong> If you use the Step Counter, Shake, Squat (motion mode), or Room Light challenges, the App temporarily reads sensor data (accelerometer, step counter, or ambient light sensor) during the challenge. This data is processed in real-time on your device and is <strong>never stored or transmitted</strong>.</li>
             <li><strong>App settings:</strong> Vibration preference, snooze settings, alarm volume, fade-in duration,
-                and dark mode preference.</li>
+                dark mode preference, auto-silence duration, vibration pattern, and other behavioral preferences.</li>
         </ul>
         <p>
             This data is stored using Android's Room database and DataStore Preferences. It remains entirely on your
-            device and is <strong>never transmitted</strong> to any server or third party. If you uninstall the App, all
+            device (unless you opt into cloud sync via Google Sign-In) and is <strong>never transmitted</strong> to any server or third party without your consent. If you uninstall the App, all
             locally stored data is automatically deleted.
         </p>
 
-        <h2>4. Camera Usage & Barcode Images</h2>
+        <h2>5. Camera Usage &amp; Barcode Images</h2>
         <p>
-            The App requests <strong>camera permission</strong> solely for the <strong>Barcode Challenge</strong>
-            feature. This feature allows you to set up an alarm that requires scanning a specific barcode or QR code to
-            dismiss.
+            The App requests <strong>camera permission</strong> solely for the <strong>Barcode Challenge</strong>,
+            <strong>Scan Sink</strong>, <strong>Scan Object</strong>, <strong>Squat (camera mode)</strong>, and <strong>Push-Up</strong> challenge features.
         </p>
         <ul>
             <li>The camera is used for real-time barcode/QR code detection using Google ML Kit's on-device barcode
                 scanning.</li>
+            <li>For Scan Sink, Scan Object, Squat (camera mode), and Push-Up challenges, the camera is used for real-time on-device object detection, image labeling, or pose detection. No images or video are recorded, stored, or transmitted.</li>
             <li>When you register a barcode for the Barcode Challenge, <strong>a photo of the barcode is captured and
                     saved locally</strong> on your device. This image serves as a reference so you can easily find and
                 scan the correct barcode to dismiss your alarm.</li>
@@ -197,12 +213,12 @@
             </li>
             <li>You can delete saved barcode images at any time by removing the associated alarm or clearing the App's
                 data.</li>
-            <li>All barcode processing happens <strong>entirely on your device.</strong></li>
-            <li>Camera permission is <strong>optional</strong>. The App functions fully without it if you do not use the
-                Barcode Challenge feature.</li>
+            <li>All barcode and image processing happens <strong>entirely on your device.</strong></li>
+            <li>Camera permission is <strong>optional</strong>. The App functions fully without it if you do not use
+                camera-based challenge features.</li>
         </ul>
 
-        <h2>5. Permissions Explained</h2>
+        <h2>6. Permissions Explained</h2>
         <p>The App requests the following Android permissions, all of which are used solely for core alarm
             functionality:</p>
         <ul>
@@ -216,7 +232,7 @@
             </li>
             <li><strong>Vibrate:</strong> Required to vibrate the device when an alarm rings (if enabled in settings).
             </li>
-            <li><strong>Camera:</strong> Optional. Used only for the Barcode Challenge and Scan challenges (see Section 4).</li>
+            <li><strong>Camera:</strong> Optional. Used only for the Barcode Challenge, Scan Sink, Scan Object, Squat (camera mode), and Push-Up challenges (see Section 5).</li>
             <li><strong>System Alert Window:</strong> Required to display the alarm screen over other apps and on the
                 lock screen.</li>
             <li><strong>Disable Keyguard:</strong> Required to dismiss the device lock screen so the alarm screen can be shown immediately.</li>
@@ -229,12 +245,12 @@
             <li><strong>Advertising ID:</strong> Used to collect an anonymous, resettable device identifier for analytics purposes (see Section 2).</li>
             <li><strong>Billing:</strong> Required to process optional in-app purchases or donations securely via Google
                 Play.</li>
-            <li><strong>Internet &amp; Network State:</strong> Required to transmit anonymized analytics data to help improve the App.</li>
+            <li><strong>Internet &amp; Network State:</strong> Required to transmit anonymized analytics data and to sync alarm data with Firebase Firestore when signed in.</li>
             <li><strong>Accessibility Service:</strong> Optional. If enabled, the App uses an Accessibility Service solely to prevent the device from being powered off while an alarm is actively ringing. This service does <strong>not</strong> read, collect, or transmit any personal data, screen content, or keystrokes. It is active <strong>only</strong> during an alarm event.</li>
             <li><strong>Device Administrator:</strong> Optional. If enabled via the "Prevent Uninstall" setting, the App registers as a Device Administrator solely to prevent its own uninstallation while alarms are active. This permission does <strong>not</strong> grant the App access to any personal data, device passwords, or other device management capabilities. No policies are enforced — the App only uses the side-effect that a device administrator cannot be uninstalled. You can disable this at any time from the App's settings when no alarm is ringing, or from your device's Settings → Security → Device Administrators.</li>
         </ul>
 
-        <h2>6. Third-Party Services</h2>
+        <h2>7. Third-Party Services</h2>
         <p>
             The App uses <strong>Google ML Kit Barcode Scanning</strong> for on-device barcode recognition (Barcode/QR Code challenge). This library
             processes data <strong>entirely on your device</strong> and does not send any data to Google or any external
@@ -244,7 +260,13 @@
             The App also uses <strong>Google ML Kit Image Labeling</strong> (Play Services variant) and <strong>Google ML Kit Object Detection</strong> for the Scan Sink and Scan Object challenges. These libraries use on-device machine learning to identify and locate objects through the camera. All image processing happens <strong>entirely on your device</strong>; no images or recognition data are transmitted to any server or third party.
         </p>
         <p>
-            The App uses <strong>Google ML Kit Pose Detection</strong> for the Push-Up challenge. This library uses on-device machine learning to detect body pose landmarks through the camera in real-time. All pose data is processed <strong>entirely on your device</strong> and is never stored or transmitted.
+            The App uses <strong>Google ML Kit Pose Detection</strong> for the Push-Up and Squat (camera mode) challenges. This library uses on-device machine learning to detect body pose landmarks through the camera in real-time. All pose data is processed <strong>entirely on your device</strong> and is never stored or transmitted.
+        </p>
+        <p>
+            The App uses <strong>Firebase Authentication</strong> to provide the optional Google Sign-In feature. When you sign in, Firebase securely manages your authentication session. Your Google account credentials (password) are never accessible to the App — authentication is handled entirely by Google's secure sign-in flow. You can learn more at <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy and Security</a>.
+        </p>
+        <p>
+            The App uses <strong>Firebase Firestore</strong> to store your alarm configurations and app settings in the cloud when you are signed in. This data is associated with your Firebase user ID and is used solely for cloud backup and cross-device sync. Firestore data is encrypted in transit and at rest. You can delete all your cloud data at any time by using the "Delete Account" option in the App.
         </p>
         <p>
             The App uses <strong>Google Analytics for Firebase</strong> to collect anonymized usage data (including the Google Advertising ID) to help us understand how users interact with the App. The Advertising ID is a resettable, anonymous identifier and is <strong>not</strong> used for personalized advertising. You can learn more about how Google uses data at <a href="https://policies.google.com/technologies/partner-sites" target="_blank">Google's Privacy &amp; Terms site</a>. No advertising networks are integrated into the App.
@@ -253,39 +275,46 @@
             The App uses <strong>Google Play In-App Review</strong> to occasionally prompt you to rate the App. This flow is handled entirely by the Google Play system and does not collect or transmit any additional data from the App.
         </p>
 
-        <h2>7. Data Sharing</h2>
+        <h2>8. Data Sharing</h2>
         <p>
-            We do <strong>not share</strong> any personally identifiable information with third parties. Anonymized usage data (including the Advertising ID) is processed by Google Analytics for Firebase as described above. We do not sell any of your data. The Advertising ID is not shared with any advertising networks.
+            We do <strong>not sell</strong> any of your data. Anonymized usage data (including the Advertising ID) is processed by Google Analytics for Firebase as described above. If you sign in with Google, your alarm configurations and settings are stored in Firebase Firestore solely for backup and sync purposes. This data is not shared with any advertising networks or other third parties. The Advertising ID is not shared with any advertising networks.
         </p>
 
-        <h2>8. Children's Privacy</h2>
+        <h2>9. Children's Privacy</h2>
         <p>
-            The App does not knowingly collect any personal information from anyone, including children under the age of
-            13. Since the App collects no personal data whatsoever, it is safe for users of all ages.
+            The App does not knowingly collect personal information from children under the age of 13. The optional Google Sign-In feature is intended for users who can consent to sharing account information. The App's core functionality works without signing in and collects no personal data in that mode.
         </p>
 
-        <h2>9. Data Security</h2>
+        <h2>10. Data Security</h2>
         <p>
             All core alarm data generated by the App is stored locally on your device using Android's built-in secure storage
-            mechanisms. Anonymized analytics data is transmitted securely over encrypted connections (HTTPS) to Firebase servers.
+            mechanisms. Anonymized analytics data is transmitted securely over encrypted connections (HTTPS) to Firebase servers. Cloud-synced data in Firebase Firestore is encrypted both in transit (TLS) and at rest. Authentication is managed by Firebase Authentication using industry-standard security practices.
         </p>
 
-        <h2>10. Data Retention and Deletion</h2>
+        <h2>11. Data Retention and Deletion</h2>
         <p>
-            All App data is stored locally on your device. You can delete all data at any time by:
+            All locally stored App data can be deleted at any time by:
         </p>
         <ul>
-            <li>Clearing the App's data through your device's Settings → Apps → Loud Alarm → Storage → Clear Data.</li>
-            <li>Uninstalling the App, which automatically removes all associated data.</li>
+            <li>Clearing the App's data through your device's Settings → Apps → Solve to Wake → Storage → Clear Data.</li>
+            <li>Uninstalling the App, which automatically removes all locally stored data.</li>
+        </ul>
+        <p>
+            If you have signed in and synced data to the cloud, you can delete all your cloud data by:
+        </p>
+        <ul>
+            <li>Using the <strong>"Delete Account"</strong> option within the App, which deletes your Firebase account and all associated cloud data (alarm configurations, settings, and user record) permanently.</li>
+            <li>Signing out will stop further sync but will not delete previously synced cloud data. Use "Delete Account" to remove all cloud data.</li>
+            <li>If you no longer have access to the App, you can <a href="delete-account.html">request account deletion via our web form</a>.</li>
         </ul>
 
-        <h2>11. Changes to This Privacy Policy</h2>
+        <h2>12. Changes to This Privacy Policy</h2>
         <p>
             We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an
             updated "Effective Date." We encourage you to review this page periodically for any updates.
         </p>
 
-        <h2>12. Contact Us</h2>
+        <h2>13. Contact Us</h2>
         <p>
             If you have any questions or concerns about this Privacy Policy or the App's data practices, please contact
             us at:
@@ -295,7 +324,7 @@
         </p>
 
         <div class="footer">
-            <p>&copy; 2026 Loud Alarm – Solve2Wake. All rights reserved.</p>
+            <p>&copy; 2026 Solve to Wake – Loud Alarm. All rights reserved.</p>
         </div>
     </div>
 </body>
